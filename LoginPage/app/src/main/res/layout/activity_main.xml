@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-black"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="25dp">
+
+            <TextView
+                android:id="@+id/lb1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Username or Mobilenumber"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lb1" />
+
+            <TextView
+                android:id="@+id/lb2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text1"
+                android:layout_alignParentLeft="true"
+                android:text="Password"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text2"
+                android:layout_below="@id/lb2"/>
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login Now"
+                android:layout_below="@id/text2"
+                android:layout_marginTop="40dp"/>
+
+        </RelativeLayout>
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="50dp"
+              android:layout_marginBottom="50dp">
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="New User? Signup"
+                  android:textColor="@color/black"
+                  android:textSize="20dp"
+                  android:id="@+id/signup"
+                  android:gravity="center"
+                  android:layout_marginBottom="50dp"
+                  android:layout_alignParentBottom="true"/>
+
+          </RelativeLayout>
+
+</LinearLayout>
